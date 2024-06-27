@@ -1,0 +1,73 @@
+body{
+	font-family: 'RFDewi', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: inherit;;
+}
+
+/* Font-Family-- Graphik */
+  @font-face {
+	font-family: "Graphik";
+	src: url('../../../../public/fonts/GraphikRegular.otf');
+	font-weight:400;
+	font-style: normal;
+  }
+	
+  @font-face {
+	font-family: "Graphik";
+	src: url('../../../../public/fonts/GraphikBold.otf');
+	font-weight: 600;
+	font-style: normal;
+  }
+	
+  @font-face {
+	font-family: "Graphik";
+	src: url('../../../../public/fonts/GraphikSemibold.otf');
+	font-weight:500;
+	font-style: normal;
+  }
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover{
+	text-decoration: none;
+	outline: none;
+}
+a:focus{
+	text-decoration: none;
+	outline: none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	list-style: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}

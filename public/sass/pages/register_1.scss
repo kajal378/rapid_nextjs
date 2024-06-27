@@ -1,0 +1,828 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.register_section_1 {
+    margin-top: 90px;
+    .main_container {
+        overflow: hidden;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #F2B4B6;
+            width: 40%;
+            top: 0;
+            left: 0px;
+            right: 0px;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -66px;
+            left: -180px;
+            right: 0px;
+            bottom: 0;
+            width: 40%;
+            height: 791px;
+            width: 55%;
+            z-index: 2;
+            background-image: url("../../images/register3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+        .img_girl {
+            height: 750px;
+            width: 431px;
+            position: absolute;
+            bottom: 0;
+            left: 38px;
+            right: 0;
+            z-index: 3;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back_img {
+            height: 718px;
+            width: 40%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .main_parent_1 {
+            @include clearfix();
+            .left_area {
+                float: left;
+                width: 39%;
+                position: relative;
+                height: 100%;
+                .info {
+                    padding-top: 40px;
+                    position: relative;
+                    z-index: 99;
+                    h5 {
+                        font-size: 56px;
+                        color: $white;
+                        font-weight: 600;
+                        padding-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        color: $white;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .right_area {
+                float: right;
+                width: calc(100% - 39%);
+                padding: 50px ;
+
+                .inner_right {
+                    width: 800px;
+                    max-width: 100%;
+
+                    .line_bar {
+                        margin-bottom: 40px;
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            li {
+                                height: 30px;
+                                width: 30px;
+                                background-color: $line;
+                                border-radius: 50%;
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 14px;
+                                    right: 29px;
+                                    bottom: 0;
+                                    height: 6px;
+                                    width: 256px;
+                                    z-index: -1;
+                                    background-color: $line;
+
+                                }
+
+                                &:first-child {
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+
+                                &.active {
+                                    background-color: $red;
+
+                                    &::before {
+                                        background-color:$red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .detail {
+                        margin-bottom: 60px;
+
+                        h5 {
+                            font-size: 40px;
+                            font-weight: 600;
+                            color: $navy;
+                        }
+                    }
+
+                    .radio_parent {
+                        display: flex;
+
+                        .first {
+                            margin-right: 40px;
+
+                            .form-check-input:checked[type=radio] {
+                                background-image: none;
+                            }
+
+                            .form-check-input:checked {
+                                background-color: $red;
+                                border-color: $red;
+                            }
+
+                            .form-check-input[type=radio] {
+
+                                height: 20px;
+                                width: 20px;
+                            }
+
+                            .form-check-input:focus {
+                                box-shadow: 0 0 0 0.25rem $line;
+                                border-color: none;
+                            }
+
+                            label {
+                                padding-left: 15px;
+                                font-size: 16px;
+                            }
+
+                            .form-check-input {
+                                background-color: $line;
+                                border: 1px solid $line;
+                            }
+                        }
+
+                        .second {
+                            .form-check-input:checked[type=radio] {
+                                background-image: none;
+                                background-color: $red;
+                            }
+
+                            .form-check-input:checked {
+
+                                border-color: $red;
+                            }
+
+                            .form-check-input[type=radio] {
+
+                                height: 20px;
+                                width: 20px;
+                            }
+
+                            .form-check-input:focus {
+                                box-shadow: 0 0 0 0.25rem $line;
+                                border-color: $line;
+                            }
+
+                            label {
+                                padding-left: 15px;
+                                font-size: 16px;
+                            }
+
+                            .form-check-input {
+                                background-color: $line;
+                                border: 1px solid $line;
+                            }
+                        }
+                    }
+
+                    .form-group {
+
+                        .form-label {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            color: $pera;
+                            padding-bottom: 20px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .btnn10 {
+                        background-color: $navy;
+                        border: none;
+                        min-width: 100px;
+                        border-radius: 15px;
+                        padding: 15px 30px;
+                        transition: 1s ease;
+                        margin-top: 20px;
+
+                        &:hover {
+                            background-color: $red;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .register_section_1 {
+        margin-top: 50px;
+        .main_container {
+           
+    
+            &::before {
+                top: -66px;
+                left: -180px;
+                right: 0px;
+                bottom: 0;
+                height: 791px;
+                width: 55%;
+            }
+    
+            .img_girl {
+                height: 654px;
+                width: 377px;
+                left: 11px;
+                right: 0;
+                
+            }
+            .back_img {
+                height: 718px;
+               
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+    
+            }
+    
+            .main_parent_1 {
+                .left_area {
+                    .info {
+                        padding-top: 40px;
+                        h5 {
+                            font-size: 45px;
+                        }
+    
+                    }
+                }
+                .right_area {
+                    padding: 50px ;
+                    .inner_right {
+                        .line_bar {
+                            margin-bottom: 35px;
+                            ul {
+                                li {
+                                    &::before {
+                                        top: 14px;
+                                        right: 29px;
+                                        bottom: 0;
+                                        height: 6px;
+                                        width: 206px;
+                                    }
+                                   
+                                }
+                            }
+                        }
+    
+                        .detail {
+                            margin-bottom: 40px;
+                            h5 {
+                                font-size: 40px;
+                            }
+                        }
+    
+                        .radio_parent {
+                            .first {
+                                margin-right: 30px;
+    
+                                label {
+                                    font-size: 16px;
+                                }
+    
+                            }
+    
+                            .second {
+                                label {
+                                    padding-left: 15px;
+                                    font-size: 16px;
+                                }
+    
+                            }
+                        }
+    
+                        .form-group {
+                            .form-label {
+                                font-size: 16px;
+                            }
+    
+                        }
+    
+                        .btnn10 {
+                            padding: 15px 30px;
+                           
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .register_section_1 {
+        margin-top: 45px;
+        .main_container {
+            &::before {
+                top: -39px;
+                left: -180px;
+                right: 0px;
+                bottom: 0;
+                height: 627px;
+                width: 55%;
+            }
+            .img_girl {
+                height: 483px;
+                width: 278px;
+                left: 21px;
+                
+            }
+            .back_img {
+                height: 483px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+    
+            }
+    
+            .main_parent_1 {
+                .left_area {
+                    .info {
+                        padding-top: 40px;
+                        h5 {
+                            font-size: 35px;
+                        }
+    
+                    }
+                }
+                .right_area {
+                    padding: 35px ;
+                    .inner_right {
+                        .line_bar {
+                            margin-bottom: 30px;
+                            ul {
+                                li {
+                                    height: 20px;
+                                    width: 20px;
+                                    &::before {
+                                        top: 9px;
+                                        right: 20px;
+                                        bottom: 0;
+                                        height: 4px;
+                                        width: 162px;
+                                        height: 4px;
+                                    }
+                                   
+                                }
+                            }
+                        }
+    
+                        .detail {
+                            margin-bottom: 30px;
+                            h5 {
+                                font-size: 35px;
+                            }
+                        }
+    
+                        .radio_parent {
+                            .first {
+                                margin-right: 30px;
+    
+                                label {
+                                    font-size: 16px;
+                                }
+    
+                            }
+    
+                            .second {
+                                label {
+                                    padding-left: 15px;
+                                    font-size: 16px;
+                                }
+    
+                            }
+                        }
+    
+                        .form-group {
+                            .form-label {
+                                font-size: 16px;
+                            }
+    
+                        }
+    
+                        .btnn10 {
+                            padding: 15px 30px;
+                           
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .register_section_1 {
+        margin-top: 35px;
+        .main_container {
+            &::before {
+                display: none;
+                top: -39px;
+                left: -180px;
+                right: 0px;
+                bottom: 0;
+                height:200px;
+                width: 100%;
+            }
+            &::after{
+                display: none;
+                width: 100%;
+                height: 200px;
+            }
+            .img_girl {
+                display: none;
+                height: 483px;
+                width: 278px;
+                left: 21px;
+                
+            }
+            .back_img {
+                display: none;
+                height: 483px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+    
+            }
+    
+            .main_parent_1 {
+                .left_area {
+                    background-color: #F2B4B6;
+                    margin-bottom: 30px;
+                    float: none;
+                    width: 100%;
+                    .info {
+                        padding: 30px;
+                        h5 {
+                            font-size: 30px;
+                        }
+    
+                    }
+                }
+                .right_area {
+                    float: none;
+                    width: 100%;
+                    padding: 25px ;
+                    .inner_right {
+                        .line_bar {
+                            margin-bottom: 20px;
+                            ul {
+                                li {
+                                    height: 20px;
+                                    width: 20px;
+                                    &::before {
+                                        top: 9px;
+                                        right: 20px;
+                                        bottom: 0;
+                                        height: 4px;
+                                        width: 266px;
+                                        height: 4px;
+                                    }
+                                   
+                                }
+                            }
+                        }
+    
+                        .detail {
+                            margin-bottom: 25px;
+                            h5 {
+                                font-size: 30px;
+                            }
+                        }
+    
+                        .radio_parent {
+                            .first {
+                                margin-right: 20px;
+                                label {
+                                    font-size: 15px;
+                                }
+    
+                            }
+    
+                            .second {
+                                label {
+                                    padding-left: 15px;
+                                    font-size: 15px;
+                                }
+    
+                            }
+                        }
+    
+                        .form-group {
+                            .form-label {
+                                font-size: 15px;
+                            }
+    
+                        }
+    
+                        .btnn10 {
+                            padding: 10px 25px;
+                           
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .register_section_1 {
+        margin-top: 25px;
+        .main_container {
+            &::before {
+                display: none;
+                top: -39px;
+                left: -180px;
+                right: 0px;
+                bottom: 0;
+                height:200px;
+                width: 100%;
+            }
+            &::after{
+                display: none;
+            }
+            .img_girl {
+                display: none;
+                
+            }
+            .back_img {
+                display: none;
+    
+            }
+    
+            .main_parent_1 {
+                .left_area {
+                    background-color: #F2B4B6;
+                    margin-bottom: 20px;
+                    float: none;
+                    width: 100%;
+                    .info {
+                        padding: 20px;
+                        h5 {
+                            font-size: 20px;
+                            padding-bottom: 15px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+    
+                    }
+                }
+                .right_area {
+                    float: none;
+                    width: 100%;
+                    padding: 20px ;
+                    .inner_right {
+                        .line_bar {
+                            margin-bottom: 20px;
+                            ul {
+                                li {
+                                    height: 20px;
+                                    width: 20px;
+                                    &::before {
+                                        top: 9px;
+                                        right: 20px;
+                                        bottom: 0;
+                                        height: 4px;
+                                        width: 126px;
+                                        height: 4px;
+                                    }
+                                   
+                                }
+                            }
+                        }
+    
+                        .detail {
+                            margin-bottom: 20px;
+                            h5 {
+                                font-size: 20px;
+                            }
+                        }
+    
+                        .radio_parent {
+                            .first {
+                                margin-right: 20px;
+                                label {
+                                    font-size: 14px;
+                                }
+    
+                            }
+    
+                            .second {
+                                label {
+                                    padding-left: 15px;
+                                    font-size: 14px;
+                                }
+    
+                            }
+                        }
+    
+                        .form-group {
+                            .form-label {
+                                font-size: 14px;
+                            }
+    
+                        }
+    
+                        .btnn10 {
+                            padding: 10px 20px;
+                           
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .register_section {
+        display: block;
+
+        .left_area {
+            width: 100%;
+            float: none;
+
+            .left_inn {
+
+                .info {
+                    padding: 30px;
+
+                    h5 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .girl {
+                    display: none;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    &::after {
+                        display: none;
+
+                    }
+                }
+            }
+        }
+
+        .right_area {
+            width: 100%;
+            float: none;
+            padding: 30px 0 30px 0;
+
+            .radio_parent {
+                .second {
+                    label {
+                        font-size: 14px;
+                    }
+                }
+
+                .first {
+                    label {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .line_bar {
+                margin-bottom: 20px;
+                height: 4px;
+
+                .circle {
+                    .circle1 {
+                        height: 20px;
+                        width: 20px;
+                    }
+
+                    .bar_circle {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+
+            .detail {
+                margin-bottom: 25px;
+
+                h5 {
+                    font-size: 20px;
+                }
+            }
+
+            .form-group {
+                p {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+
+                .form-label {
+                    font-size: 14px;
+                    padding-bottom: 0;
+                }
+
+                .form-control {
+                    height: 40px;
+                    padding: 0 20px;
+                }
+            }
+
+            .btnn10 {
+                margin-top: 0;
+                padding: 10px 25px;
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

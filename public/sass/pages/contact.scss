@@ -1,0 +1,618 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.contact_section {
+    padding: 80px 0;
+    .main_parent_1 {
+        overflow: hidden;
+        border-radius: 15px;
+        // position: relative;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+        display: flex;
+        height: 100%;
+        .left_area {
+            color: #ffffff;
+            padding: 50px 0px 30px 0px;
+            height: 100%;
+            background-color: $red;
+            float: left;
+            width: 482px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("./././../../images/contact.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                bottom: -100px;
+                left: 111px;
+                width: 100%;
+                height: 400px;
+                opacity: 0.5;
+                overflow: hidden;
+            }
+            .left_inn_parent {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .left_inn {
+                    padding: 0px 30px;
+                    .info {
+                        h5 {
+                            font-size: 42px;
+                            font-weight: 700;
+                        }
+                        p {
+                            font-size: 17px;
+                            font-weight: 400;
+                            padding-top: 20px;
+                        }
+                    }
+
+                    .listing {
+                        padding-top: 30px;
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                                a {
+                                    @include clearfix();
+                                    display: inline-block;
+                                    .icons {
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 30px;
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        padding-top: 5px;
+                                    }
+                                    .pera {
+                                        color: #ffffff;
+                                        font-size: 17px;
+                                        font-weight: 400;
+                                        padding-left: 15px;
+                                        float: right;
+                                        width: calc(100% - 30px);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    .social_media {
+                        padding-top: 40px;
+
+                        ul {
+                            li {
+                                display: inline-block;
+                                padding-right: 20px;
+                                font-size: 20px;
+                                color: #ffffff;
+
+                                &:last-child {
+                                    padding-right: 0;
+                                }
+
+                                &:hover {
+                                    color: $facebook;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bottom_content {
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(50px);
+                    padding: 20px 0px;
+                    border-radius: 15px;
+                    margin: 0 15px;
+
+                    p {
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right_area {
+            padding: 40px;
+            float: right;
+            width: calc(100% - 482px);
+
+            .inner_right {
+                .form-group {
+                    .form-label {
+                        font-size: 16px;
+                    }
+
+                    .form-control_1 {
+                        padding: 10px 20px;
+                    }
+
+                    .form-select {
+                        background-color: #F2F2F2;
+                        height: 45px;
+                        padding: 0 30px;
+                        border-radius: 15px;
+                        border: 0;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                }
+
+                .btn10 {
+                    text-align: center;
+
+                    .bttn {
+                        background-color: $navy;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact_section {
+        padding: 40px 0;
+
+        .main_parent_1 {
+            border-radius: 12px;
+            .left_area {
+                padding: 35px 0px 20px 0px;
+                width: 450px;
+                &::after {
+                    bottom: -100px;
+                    left: 111px;
+                    height: 400px;
+                }
+                .left_inn_parent {
+                    .left_inn {
+                        padding: 0px 20px;
+                        .info {
+                            h5 {
+                                font-size: 35px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                padding-top: 15px;
+                            }
+                        }
+
+                        .listing {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                    margin-bottom: 15px;
+                                    a{
+                                        .icons {
+                                            font-size: 17px;
+                                        }
+
+                                        .pera {
+                                            font-size: 15px;
+                                            padding-left: 15px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .social_media {
+                            padding-top: 30px;
+                            ul {
+                                li {
+                                   
+                                    padding-right: 15px;
+                                    font-size: 18px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_content {
+                        padding: 15px 0px;
+                        border-radius: 12px;
+
+                       
+                    }
+                }
+            }
+
+            .right_area {
+                padding: 30px;
+                width: calc(100% - 450px);
+
+                .inner_right {
+                    .form-group {
+                        .form-label {
+                            font-size: 15px;
+                            padding-bottom: 0;
+                        }
+
+                        .form-control_1 {
+                            padding: 10px 15px;
+                        }
+
+                        .form-select {
+                            padding: 0 20px;
+                            border-radius: 12px;
+
+                        }
+
+                    }
+
+                   
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact_section {
+        padding: 35px 0;
+
+        .main_parent_1 {
+            border-radius: 10px;
+            .left_area {
+                padding: 20px 0;
+                width: 332px;
+                &::after {
+                    bottom: -100px;
+                    left: 111px;
+                    height: 400px;
+                }
+                .left_inn_parent {
+                    .left_inn {
+                        padding: 0px 15px;
+                        .info {
+                            h5 {
+                                font-size: 28px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                padding-top: 15px;
+                            }
+                        }
+
+                        .listing {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                    margin-bottom: 15px;
+                                    a{
+                                        .icons {
+                                            font-size: 16px;
+                                        }
+
+                                        .pera {
+                                            font-size: 15px;
+                                            padding-left: 15px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .social_media {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                   
+                                    padding-right: 15px;
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_content {
+                        padding: 15px 0px;
+                        border-radius: 10px;
+
+                       
+                    }
+                }
+            }
+
+            .right_area {
+                padding: 20px;
+                width: calc(100% - 332px);
+
+                .inner_right {
+                    .form-group {
+                        .form-label {
+                            font-size: 14px;
+                            padding-bottom: 0;
+                        }
+
+                        .form-control_1 {
+                            padding: 10px 15px;
+                        }
+
+                        .form-select {
+                            padding: 0 15px;
+                            border-radius: 10px;
+
+                        }
+
+                    }
+
+                   
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .contact_section {
+        padding: 30px 0;
+
+        .main_parent_1 {
+            border-radius: 10px;
+            display: block;
+            height: auto;
+            .left_area {
+                float: none;
+                padding: 20px 0;
+                width: 100%;
+                &::after {
+                    display: none;
+                }
+                .left_inn_parent {
+                    .left_inn {
+                        padding: 0px 15px;
+                        .info {
+                            h5 {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 14px;
+                                padding-top: 15px;
+                            }
+                        }
+
+                        .listing {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                    margin-bottom: 15px;
+                                    a{
+                                        .icons {
+                                            font-size: 16px;
+                                        }
+
+                                        .pera {
+                                            font-size: 14px;
+                                            padding-left: 15px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .social_media {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                   
+                                    padding-right: 15px;
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_content {
+                        padding: 15px 15px;
+                        justify-content: space-between;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        p{
+                            &:first-child{
+                                margin-right: 0;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+
+            .right_area {
+                padding: 20px;
+                width:100%;
+
+                .inner_right {
+                    .form-group {
+                        .form-label {
+                            font-size: 14px;
+                            padding-bottom: 0;
+                        }
+
+                        .form-control_1 {
+                            padding: 10px 15px;
+                        }
+
+                        .form-select {
+                            padding: 0 15px;
+                            border-radius: 10px;
+
+                        }
+
+                    }
+                    .btn10{
+                        .bttn{
+                            padding: 10px 30px;
+                            border-radius: 12px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .contact_section {
+        padding: 30px 0;
+
+        .main_parent_1 {
+            border-radius: 10px;
+            display: block;
+            height: auto;
+            .left_area {
+                float: none;
+                padding: 20px 0;
+                width: 100%;
+                &::after {
+                    display: none;
+                }
+                .left_inn_parent {
+                    .left_inn {
+                        padding: 0px 15px;
+                        .info {
+                            h5 {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-size: 14px;
+                                padding-top: 15px;
+                            }
+                        }
+
+                        .listing {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                    margin-bottom: 15px;
+                                    a{
+                                        .icons {
+                                            font-size: 16px;
+                                        }
+
+                                        .pera {
+                                            font-size: 14px;
+                                            padding-left: 15px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .social_media {
+                            padding-top: 20px;
+                            ul {
+                                li {
+                                   
+                                    padding-right: 15px;
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_content {
+                        padding: 15px 15px;
+                        justify-content: space-between;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        p{
+                            &:first-child{
+                                margin-right: 0;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+
+            .right_area {
+                padding: 15px;
+                width:100%;
+
+                .inner_right {
+                    .form-group {
+                        .form-label {
+                            font-size: 14px;
+                            padding-bottom: 0;
+                        }
+
+                        .form-control_1 {
+                            padding: 10px 15px;
+                        }
+
+                        .form-select {
+                            padding: 0 15px;
+                            border-radius: 10px;
+
+                        }
+
+                    }
+                    .btn10{
+                        .bttn{
+                            padding: 10px 30px;
+                            border-radius: 10px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

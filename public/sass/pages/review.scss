@@ -1,0 +1,303 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.rating_section {
+    padding: 40px 0;
+    .rating_area {
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            color: #111111;
+            margin-bottom: 30px;
+        }
+
+        .review_list_area {
+            .listing {
+                li {
+                    padding: 20px 0;
+                    border-bottom: 1px solid #D4D4D4;
+                    .image_content_area {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        margin-bottom: 30px;
+                        .image_area {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            overflow: hidden;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .content_area {
+                            h5 {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #111111;
+                                padding-bottom: 10px;
+                            }
+
+                            .star_list {
+                                li {
+                                    padding: 0;
+                                    border: 0;
+                                    display: inline-block;
+
+                                    .star {
+                                        color: #dab340;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .date_area {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #111111;
+                        margin-bottom: 20px;
+                    }
+
+                    .feedback {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #4F9836;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        color: #102b44;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .rating_section {
+        padding: 30px 0;
+        .rating_area {
+            h3 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+    
+            .review_list_area {
+                .listing {
+                    li {
+                        padding: 20px 0;
+                        .image_content_area {
+                            margin-bottom: 20px;
+    
+                            .content_area {
+                                h5 {
+                                    font-size: 17px;
+                                }
+    
+                                
+                            }
+                        }
+    
+                        .date_area {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+    
+                        .feedback {
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .rating_section {
+        padding: 25px 0;
+        .rating_area {
+            h3 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+    
+            .review_list_area {
+                .listing {
+                    li {
+                        padding: 20px 0;
+                        .image_content_area {
+                            margin-bottom: 15px;
+    
+                            .content_area {
+                                h5 {
+                                    font-size: 17px;
+                                }
+    
+                                
+                            }
+                        }
+    
+                        .date_area {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+    
+                        .feedback {
+                            font-size: 17px;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .rating_section {
+        padding: 20px 0;
+        .rating_area {
+            h3 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+    
+            .review_list_area {
+                .listing {
+                    li {
+                        padding: 15px 0;
+                        .image_content_area {
+                            margin-bottom: 15px;
+    
+                            .content_area {
+                                h5 {
+                                    font-size: 16px;
+                                }
+    
+                                
+                            }
+                        }
+    
+                        .date_area {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+    
+                        .feedback {
+                            font-size: 17px;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .rating_section {
+        padding: 20px 0;
+        .rating_area {
+            h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+    
+            .review_list_area {
+                .listing {
+                    li {
+                        padding: 15px 0;
+                        .image_content_area {
+                            margin-bottom: 15px;
+    
+                            .content_area {
+                                h5 {
+                                    font-size: 16px;
+                                }
+    
+                                
+                            }
+                        }
+    
+                        .date_area {
+                            font-size: 15px;
+                            margin-bottom: 15px;
+                        }
+    
+                        .feedback {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

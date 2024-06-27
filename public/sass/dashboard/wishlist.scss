@@ -1,0 +1,390 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.db_section {
+    &.profile_section {
+        .main_parent {
+            .right_db {
+               
+                .inner_right {
+                    .banner_section_3 {
+                        padding-top: 90px;
+                        
+                        .slider_3 {
+                           .wishlist{
+                           margin-bottom: 20px;
+                            background-color: $white;
+                            box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.05);
+                                border-radius: 10px;
+                                padding: 25px 30px;
+
+                                h5{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: $navy;
+                                }
+                           }
+                            .main_banner {
+                               
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                .card_1 {
+                                    width: 31%;
+                                    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 0px;
+                                    border-radius: 20px;
+                                    overflow: hidden;
+                                    margin-bottom: 20px;
+                                    margin-right: 15px;
+                                    
+                                    .image_3 {
+                                        height: 209px;
+                                        position: relative;
+                                        img {
+                                            height: 100%;
+                                            width: 100%;
+                                            object-fit: cover;
+                                        }
+                                        .heart{
+                                            a{
+                                            position: absolute;
+                                            top: 0;right: 0;bottom: 0;
+                                            padding-right: 20px;
+                                            padding-top: 10px;
+                                            color: $red;
+                                            font-size: 22px;
+                                            }
+                                        }
+                                    }
+
+                                    .text_area_3 {
+                                        padding: 20px 20px 40px 20px;
+
+                                        .first {
+                                            color: $black;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            margin-bottom: 20px;
+                                        }
+
+                                        .second {
+                                            color: $black;
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            margin-bottom: 30px;
+                                        }
+
+                                        .third {
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            color: $black;
+                                            margin-bottom: 35px;
+                                        }
+
+                                        .fourth {
+                                            color: $navy;
+                                            font-weight: 500;
+                                            font-size: 15px;
+                                                &:hover {
+                                                    color: $red;
+                                                }
+                                        
+                                        }
+                                    }
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .db_section {
+        &.profile_section {
+            .main_parent {
+                .right_db {
+                    .inner_right {
+                        width: 100%;
+                        padding-left: 0px;
+                        .banner_section_3 {
+                            padding-top: 0px;
+                    
+                            .slider_3 {
+                                    .main_banner {
+                                        .card_1 {
+                                            width: 47%;
+                                            .text_area_3 {
+                                                padding: 20px;
+                    
+                                                .first {
+                                                    margin-bottom: 15px;
+                                                }
+                    
+                                                .second {
+                                                    margin-bottom: 15px;
+                                                }
+                    
+                                                .third {
+                                                    margin-bottom: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                
+                    
+                                
+                    
+                                
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .db_section {
+        &.profile_section {
+            .main_parent {
+                .right_db {
+                    .inner_right {
+                        width: 100%;
+                        padding-left: 0px;
+                        .banner_section_3 {
+                            padding-top: 0px;
+                    
+                            .slider_3 {
+                                .wishlist{
+                                    padding: 15px;
+                                }
+                                    .main_banner {
+                                        .card_1 {
+                                            width: 100%;
+                                            margin-right: 0;
+                                            .text_area_3 {
+                                                padding: 15px;
+                    
+                                                .first {
+                                                    margin-bottom: 10px;
+                                                }
+                    
+                                                .second {
+                                                    margin-bottom: 10px;
+                                                }
+                    
+                                                .third {
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                
+                    
+                                
+                    
+                                
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .db_section {
+        &.profile_section {
+            .main_parent {
+                padding: 0;
+                .right_db {
+                    .inner_right {
+                        width: 100%;
+                        .banner_section_3 {
+                            padding-top: 0px;
+                            .slider_3 {
+                                .wishlist{
+                                    padding: 15px;
+                                    h5{
+                                        font-size: 15px;
+                                    }
+                                }
+                                    .main_banner {
+                                        .card_1 {
+                                            width: 47%;
+                                            .text_area_3 {
+                                                padding: 20px;
+                    
+                                                .first {
+                                                    margin-bottom: 15px;
+                                                    font-size: 14px;
+                                                }
+                    
+                                                .second {
+                                                    margin-bottom: 15px;
+                                                    font-size: 15px;
+                                                }
+                    
+                                                .third {
+                                                    margin-bottom: 15px;
+                                                }
+                                                .fourth{
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                
+                    
+                                
+                    
+                                
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .db_section {
+        &.profile_section {
+            .main_parent {
+                padding: 0;
+                .right_db {
+                    .inner_right {
+                        width: 100%;
+                        .banner_section_3 {
+                            padding-top: 0px;
+                            .slider_3 {
+                                .wishlist{
+                                    h5{
+                                        font-size: 14px;
+                                    }
+                                }
+                                    .main_banner {
+                                        .card_1 {
+                                            width: 100%;
+                                            margin-right: 0;
+                                            .text_area_3 {
+                                                padding: 15px;
+                    
+                                                .first {
+                                                    margin-bottom: 10px;
+                                                }
+                    
+                                                .second {
+                                                    margin-bottom: 10px;
+                                                }
+                    
+                                                .third {
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                
+                    
+                                
+                    
+                                
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .db_section {
+        &.profile_section {
+            .main_parent {
+                padding: 0;
+                .right_db {
+                    .inner_right {
+                        width: 100%;
+                        .banner_section_3 {
+                            padding-top: 30px;
+                            .slider_3 {
+                                .wishlist{
+                                    h5{
+                                        font-size: 14px;
+                                    }
+                                }
+                                    .main_banner {
+                                        .card_1 {
+                                            width: 100%;
+                                            .text_area_3 {
+                                                padding: 20px;
+                    
+                                                .first {
+                                                    margin-bottom: 15px;
+                                                }
+                    
+                                                .second {
+                                                    margin-bottom: 15px;
+                                                }
+                    
+                                                .third {
+                                                    margin-bottom: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                
+                    
+                                
+                    
+                                
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
